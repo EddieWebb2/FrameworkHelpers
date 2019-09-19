@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{6F32F54F
 		ReleaseNotes.md = ReleaseNotes.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkHelpers.Tests", "..\FrameworkHelpers\FrameworkHelpers.Tests\FrameworkHelpers.Tests.csproj", "{F7D2C4DF-99FA-464C-9D78-002FE6982D9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkHelpers.Tests", "FrameworkHelpers.Tests\FrameworkHelpers.Tests.csproj", "{C77795E5-80C8-46C5-A4AC-8964C4C83AF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +24,10 @@ Global
 		{6B56CA94-9D41-45A7-9611-9149183DB21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B56CA94-9D41-45A7-9611-9149183DB21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B56CA94-9D41-45A7-9611-9149183DB21B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7D2C4DF-99FA-464C-9D78-002FE6982D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7D2C4DF-99FA-464C-9D78-002FE6982D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7D2C4DF-99FA-464C-9D78-002FE6982D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7D2C4DF-99FA-464C-9D78-002FE6982D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77795E5-80C8-46C5-A4AC-8964C4C83AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77795E5-80C8-46C5-A4AC-8964C4C83AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77795E5-80C8-46C5-A4AC-8964C4C83AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77795E5-80C8-46C5-A4AC-8964C4C83AF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

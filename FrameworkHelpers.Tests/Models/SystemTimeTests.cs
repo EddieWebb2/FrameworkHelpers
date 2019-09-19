@@ -11,7 +11,7 @@ namespace FrameworkHelpers.Tests.Models
         [TestMethod]
         public void When_overriding_now_it_should_return_overriden_value()
         {
-            DateTime fix = new DateTime(2019, 9, 19,1,1,1);
+            DateTime fix = new DateTime(2019, 9, 19, 1, 1, 1);
 
             SystemTime.OverrideWith(() => fix);
 
