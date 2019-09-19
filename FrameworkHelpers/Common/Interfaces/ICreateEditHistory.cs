@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FrameworkHelpers.Interfaces
+namespace FrameworkHelpers.Common.Interfaces
 {
     public interface ICreateEditHistory
     {

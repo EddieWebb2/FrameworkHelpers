@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FrameworkHelpers.Models
+namespace FrameworkHelpers.Common.Models
 {
     public class SystemTime
     {

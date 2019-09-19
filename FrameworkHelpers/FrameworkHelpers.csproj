@@ -41,14 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\ICreateEditHistory.cs" />
-    <Compile Include="Models\SystemTime.cs" />
+    <Compile Include="Common\Interfaces\ICreateEditHistory.cs" />
+    <Compile Include="Common\Models\SystemTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Types\ReleaseModes.cs" />
-    <Compile Include="Types\StandardEnumValues.cs" />
+    <Compile Include="Common\Types\ReleaseModes.cs" />
+    <Compile Include="Common\Types\StandardEnumValues.cs" />
+    <Compile Include="Utilities\Models\PasswordResult.cs" />
+    <Compile Include="Utilities\PasswordOptions.cs" />
+    <Compile Include="WebUserApi\Interfaces\ILoginDetails.cs" />
+    <Compile Include="WebUserApi\Interfaces\ILoginRequest.cs" />
+    <Compile Include="WebUserApi\Types\LoginResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Utilities\" />
+    <Folder Include="WebUserApi\Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

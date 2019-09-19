@@ -1,4 +1,4 @@
-﻿namespace FrameworkHelpers.Types
+﻿namespace FrameworkHelpers.Common.Types
 {
     public enum ReleaseModes
     {

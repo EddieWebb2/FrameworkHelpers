@@ -1,5 +1,5 @@
 ﻿using System;
-using FrameworkHelpers.Models;
+using FrameworkHelpers.Common.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shouldly;
 
