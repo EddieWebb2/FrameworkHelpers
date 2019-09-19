@@ -20,6 +20,7 @@ AssemblyVersion.cs
 /.vs/
 /packages/
 /node_modules/
+/FrameworkHelpers/packages/
 
 package-lock.json
 coverage.json
