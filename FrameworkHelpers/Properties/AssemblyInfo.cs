@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FrameworkHelpers")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Helper library for Application and Service development")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Eddie Webb")]
 [assembly: AssemblyProduct("FrameworkHelpers")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
