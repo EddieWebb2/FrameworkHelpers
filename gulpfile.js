@@ -23,7 +23,7 @@ var config = {
   deployTarget: args.deployTarget
 }
 
-gulp.task('default', [ "restore", "version", "compile", "test" ]);
+gulp.task('default', [ "restore", "version", "compile" ]);
 
 gulp.task('restore', function() {
   return gulp
@@ -49,32 +49,14 @@ gulp.task('compile', [ "restore", "version" ], function() {
     .pipe(msbuild({
       targets: [ "Clean", "Rebuild" ],
       configuration: config.mode,
-      toolsVersion: 4.0,
+      toolsVersion: 14.0,
       errorOnFail: true,
       stdout: true,
       verbosity: "minimal"
     }));
 });
 
-gulp.task('test', [ "compile" ], function() {
-  return gulp
-    .src(['**/bin/*/*.Tests.dll'], { read: false })
-    .pipe(xunit({
-      executable: 'packages/xunit.runner.console.2.1.0/tools/xunit.console.exe',
-      options: {
-        nologo: true,
-        verbose: true,
-      }
-    }));
-});
 
-gulp.task('package', [ "test" ], shell.task([
-  ' ".build/tools/nuget.exe"' +
-  ' pack ' + config.name + '/' + config.name + '.vbproj' +
-  ' -version ' + config.version +
-  ' -Prop Configuration=' + config.mode +
-  ' -o ' + config.output
-]));
 
 gulp.task('deploy', [ "package" ], function() {
 
