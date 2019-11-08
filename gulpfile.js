@@ -82,9 +82,9 @@ gulp.task('deploy', [ "package" ], function() {
     .src(config.output + '/*.' + config.version + '.nupkg')
     .pipe(debug())
     .pipe(nuget.push({
-      feed: 'http://mtg-tfs-cc:8080/',
+      feed: 'http://192.168.100.110:9999/',
       nuget: ".build/tools/nuget.exe",
-      apiKey: 'C9D119B4-C00D-4C70-93C8-E63E11257042'
+      apiKey: 'ThisIsAReallyStrongPassword123'
     }));
 });
 
