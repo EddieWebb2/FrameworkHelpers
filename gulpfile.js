@@ -70,7 +70,7 @@ gulp.task('test', [ "compile" ], function() {
 
 gulp.task('package', [ "test" ], shell.task([
   ' ".build/tools/nuget.exe"' +
-  ' pack ' + config.name + '/' + config.name + '.vbproj' +
+  ' pack ' + config.name + '/' + config.name + '.csproj' +
   ' -version ' + config.version +
   ' -Prop Configuration=' + config.mode +
   ' -o ' + config.output
