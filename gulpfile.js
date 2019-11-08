@@ -16,11 +16,13 @@ var project = JSON.parse(fs.readFileSync("./package.json"));
 
 var config = {
   name: project.name,
+  version: project.version,
   mode: args.mode || "Debug",
-  buildNumber: args.build || "000",
-  version: project.version + "." + (args.build || "000"),
   output: ".build/deploy",
-  deployTarget: args.deployTarget
+  deployTarget: args.deployTarget,
+  releasenotesfile: "ReleaseNotes.md",
+  buildNumber: args.build || "000"
+  
 }
 
 gulp.task('default', [ "restore", "version", "compile", "test" ]);
