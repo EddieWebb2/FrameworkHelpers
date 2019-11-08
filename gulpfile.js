@@ -23,7 +23,7 @@ var config = {
   deployTarget: args.deployTarget
 }
 
-gulp.task('default', [ "restore", "version", "compile" ]);
+gulp.task('default', [ "restore", "version", "compile", "test" ]);
 
 gulp.task('restore', function() {
   return gulp
