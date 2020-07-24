@@ -75,7 +75,7 @@ gulp.task('package', [ "test" ], shell.task([
   ' pack ' + config.name + '/' + config.name + '.csproj' +
   ' -version ' + config.version +
   ' -Prop Configuration=' + config.mode +
-  ' -o ' + config.output
+  ' -OutputDirectory ' + config.output
 ]));
 
 gulp.task('deploy', [ "package" ], function() {
