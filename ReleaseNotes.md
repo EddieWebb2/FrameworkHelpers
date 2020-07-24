@@ -1,5 +1,8 @@
 # Release Notes - FrameworkHelpers
 
+## 1.1.1
+- Package now builds locally and is deploy ready - updated.
+
 ## 1.1.0
 - Package now builds locally and is deploy ready.
 
